@@ -1,0 +1,330 @@
+/* 
+    Name: Stevene Roe
+    File: styles.css
+    Due: 10/19/2025
+*/
+
+/* CSS Style resets */
+header, nav, body,main, footer, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img {
+	max-width: 100%;
+    border-style: solid;
+    border-width: 4px 4px 30px 4px;
+    border-color:#f6eee4;
+    padding: 10px;
+	display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Hide tab-desk class */
+.tab-desk{
+	display: none;
+}
+
+/* Style rule for the body background */
+body {
+    background: url("/images/background_art.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Style rules for header */
+header {
+    margin: 40px 10px;
+    background-color: #000;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    text-align: center;
+    border: solid;
+    border-width: 10px;
+    border-color:#5de6af;
+    border-radius: 90px;
+}
+
+header h1 {
+    color: #5de6af;
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-style: normal;
+}
+
+header a {
+    text-decoration: none;
+    color: #5de6af;
+}
+
+/*Style rules for navigation area*/
+nav {
+    margin: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: "Jetbrains Mono", monospace;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #2a0611;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    background-color: #5de6af;
+    margin: 3px;
+    border-radius: 50px;
+}
+
+nav li a:active {
+    color: #f6eee4;
+    background-color: #000;
+}
+
+/* Style rules for main content */
+main {
+    padding: 0 4%;
+    background: transparent;
+}
+
+main h1, h2, h3 {
+    margin: 20px 0px 0px 0px;
+    display: block;
+    font-family: "Spectral", serif;
+    color: #f7e8d7;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main p {
+    background-color: #0a1407;
+    border-style: solid;
+    border-width: 5px 10px;
+    border-color: #429673;
+    margin-top: 5px;
+    padding: 10px;
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 1.1em;
+    line-height: 1.7em;
+    color: #f6eee4;
+    border-radius: 20px;
+    max-height: fit-content;
+}
+
+main p a {
+    color: #0a1407;
+    font-weight: bold;
+    padding: 0.1em 0.5em;
+    text-decoration: none;
+    background-color: #5de6af;
+    border-radius: 50px;
+}
+
+main p a:active {
+    color: #f6eee4;
+    background-color: #000;
+}
+
+.hero {
+    max-width: 85vw;
+    margin: auto;
+}
+
+/* Style rules for header style links */
+.button {
+    display: block;
+    font-size: 1.5em;
+    font-family: "Jetbrains Mono", monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button a {
+    display: block;
+    color: #2a0611;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    background-color: #5de6af;
+    margin: 3px;
+    border-radius: 50px;
+}
+
+.button a:active {
+    color: #f6eee4;
+    background-color: transparent;
+}
+
+/* Style rule for captioned image blocks */
+.img-captioned img {
+    position: center;
+    width: 85vw;
+    margin: auto;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+/* Style rule for the socials list */
+#socials {
+    text-align: center;
+}
+
+/* Style rules for listed links */
+.link-list ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.link-list {
+    display: block;
+    font-size: 1.2em;
+    font-family: "Jetbrains Mono", monospace;
+    font-weight: bold;
+    width: 13em;
+    margin: auto;
+}
+
+.link-list li a {
+    display: block;
+    color: #2a0611;
+    padding: 0.5em 2em;
+    text-decoration: none;
+    background-color: #5de6af;
+    margin: 3px;
+    border-radius: 50px;
+}
+
+.link-list li a:active {
+    color: #f6eee4;
+    background-color: transparent;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    margin-top: 60px;;
+    padding: 10px;
+    background-color: #0f010c6c;
+    color: #f7e8d7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.75em;
+    clear: left;  
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport*/
+@media screen and (min-width: 580px), print { 
+    
+    /* Tablet and Desktop Viewport: Show tab-desk class, hide mobile class */  
+    .tab-desk {
+        display: block;
+    } 
+    .mobile {
+        display: none;  
+    } 
+
+    /* Tablet and Desktop Viewport: Set mas width of content */
+    #container {
+        max-width: 1080px;
+        margin: auto;
+    }
+
+    /* Tablet Viewport: Style rule for header content */     
+    span.tab-desk {
+        display: inline;
+    }
+
+    /* Tablet Viewport: Style rules for main content*/ 
+    .hero {
+        max-width: 50vw;
+    }
+
+    .img-captioned {
+        display: flex;
+    }
+
+    .img-captioned img {
+        width: 50%;
+        margin: 10px
+    }
+
+    /* Tablet Viewport: Style rules for nav content*/
+    nav ul {
+        background-color: #5de6af;
+        border-radius: 90px;
+        padding: 0px;
+    }
+
+    nav li {
+        font-size: 1.2em;
+        display: inline-block;
+        border-right: solid;
+    }
+
+    nav li:last-child{
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 8px;
+        background-color: transparent;
+    }
+
+    nav li a:active {
+        background-color: #0f010c;
+    }
+
+    .button {
+        min-width: text;
+    }
+
+}
+
+@media screen and (min-width: 1100px), print { 
+
+
+    header {
+        position: absolute;
+        text-align: left;
+        padding: 0 10px;
+        margin-top: 2px;
+    }
+
+    nav ul {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    nav li a:hover, .button a:hover, main p a:hover, .link-list a:hover {
+        background: #a2eed0;
+    }
+
+    nav li a:active, .button a:active, main p a:active {
+        color: #a2eed0;
+        background-color: #000;
+    }
+
+
+}
