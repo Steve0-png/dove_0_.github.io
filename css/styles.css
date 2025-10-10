@@ -30,7 +30,7 @@ img {
 
 /* Style rule for the body background */
 body {
-    background: url("dove_0_.github.io/images/background_art.png") no-repeat;
+    background: url("../images/background_art.png") no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -328,4 +328,3 @@ footer a {
 
 
 }
-
