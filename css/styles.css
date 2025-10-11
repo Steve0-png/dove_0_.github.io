@@ -142,6 +142,12 @@ main p a:active {
     background-color: #000;
 }
 
+p.steve {
+    border-color: #7a42a8;
+    font-family: "courier new", monospace;
+    font-weight: 500;
+}
+
 .hero {
     max-width: 85vw;
     margin: auto;
@@ -149,7 +155,6 @@ main p a:active {
 
 /* Style rules for header style links */
 .button {
-    display: block;
     font-size: 1.5em;
     font-family: "Jetbrains Mono", monospace;
     font-weight: bold;
@@ -158,6 +163,7 @@ main p a:active {
 
 .button a {
     display: block;
+    min-width: 9.6em;
     color: #2a0611;
     padding: 0.5em 2em;
     text-decoration: none;
