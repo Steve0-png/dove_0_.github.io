@@ -145,6 +145,7 @@ main p a:active {
 p.steve {
     border-color: #7a42a8;
     font-family: "courier new", monospace;
+    font-size: 1em;
     font-weight: 500;
 }
 
