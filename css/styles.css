@@ -30,6 +30,7 @@ img {
 
 /* Style rule for the body background */
 body {
+    /* background: radial-gradient(circle at bottom, #701835, #300625, #020727); */
     background: url("../images/background_art.png") no-repeat;
     background-size: cover;
     background-position: center center;
@@ -54,7 +55,7 @@ header {
 header h1 {
     color: #5de6af;
     font-family: "Jetbrains Mono", monospace;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 800;
     font-style: normal;
 }
@@ -118,7 +119,7 @@ main p {
     border-style: solid;
     border-width: 5px 10px;
     border-color: #429673;
-    margin-top: 5px;
+    margin: 10px;
     padding: 10px;
     font-family: "Jetbrains Mono", monospace;
     font-size: 1.1em;
@@ -142,27 +143,29 @@ main p a:active {
     background-color: #000;
 }
 
-p.steve {
-    border-color: #7a42a8;
-    font-family: "Jetbrains Mono", monospace;
-    font-size: 1em;
-    font-weight: 200;
-}
-
-.p-col ul {
-    list-style-type: disc;
-    display: block;
+main ul {
     background-color: #0a1407;
     border-style: solid;
     border-width: 5px 20px;
     border-color: #429673;
-    margin: 20px;
+    margin-left: 20px;
     padding: 5px;
     font-family: "Jetbrains Mono", monospace;
     font-size: 1em;
     line-height: 1.7em;
     color: #f6eee4;
     border-radius: 10px;
+}
+
+main li {
+    display: block;
+}
+
+p.steve {
+    border-color: #7a42a8;
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 1em;
+    font-weight: 200;
 }
 
 .hero {
@@ -194,8 +197,17 @@ p.steve {
     background-color: transparent;
 }
 
-/* Style rule for captioned image blocks */
+/* Style rules for captioned image blocks */
+.img-captioned {
+    margin-bottom: 10px;
+}
+
 .img-captioned img {
+    width: 85vw;
+    margin: auto;
+}
+
+.catalogue-captioned img {
     width: 85vw;
     margin: auto;
 }
@@ -313,8 +325,18 @@ footer a {
         display: flex;
     }
     
-    .img-captioned img {
-        width: 60vw;
+    .img-captioned img{
+        justify-self: center;
+        min-width: 300px;
+        margin: 10px;
+    }
+
+    .catalogue-captioned {
+        display: flex;
+    }
+
+    .catalogue-captioned img{
+        min-width: 200px;
         margin: 10px;
     }
 
@@ -330,7 +352,7 @@ footer a {
 }
 
 /* Media Query for Desktop Viewport*/
-@media screen and (min-width: 1100px), print { 
+@media screen and (min-width: 1023px), print { 
 
     /* Desktop Viewport: Style rule for header content */
     header {
@@ -368,9 +390,27 @@ footer a {
         gap: 20px;
     }
 
+    #catalogue {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-items: center;
+    }
+
     .img-captioned img {
         width: 50%;
         height: 50%;
+        margin: 10px;
+    }
+
+    .catalogue-captioned {
+        display: block;
+        justify-items: center;
+    }
+
+    .catalogue-captioned img {
+        max-width: 50%;
+        max-height: 50%;
         margin: 10px;
     }
 
