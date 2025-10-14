@@ -144,9 +144,9 @@ main p a:active {
 
 p.steve {
     border-color: #7a42a8;
-    font-family: "courier new", monospace;
+    font-family: "Jetbrains Mono", monospace;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 .hero {
@@ -180,7 +180,6 @@ p.steve {
 
 /* Style rule for captioned image blocks */
 .img-captioned img {
-    position: center;
     width: 85vw;
     margin: auto;
 }
@@ -252,9 +251,9 @@ footer a {
         display: none;  
     } 
 
-    /* Tablet and Desktop Viewport: Set mas width of content */
+    /* Tablet and Desktop Viewport: Set max width of content */
     #container {
-        max-width: 1080px;
+        max-width: 1920px;
         margin: auto;
     }
 
@@ -270,11 +269,6 @@ footer a {
 
     .img-captioned {
         display: flex;
-    }
-
-    .img-captioned img {
-        width: 50%;
-        margin: 10px
     }
 
     /* Tablet Viewport: Style rules for nav content*/
@@ -303,15 +297,28 @@ footer a {
         background-color: #0f010c;
     }
 
+    /* Tablet Viewport: Style rules for main content */
     .button {
         min-width: text;
     }
 
+    .p-col {
+        justify-items: center;
+        margin: auto;
+    }
+
+    .img-captioned img {
+        width: 35vw;
+        margin: 10px;
+    }
+
+
 }
 
+/* Media Query for Desktop Viewport*/
 @media screen and (min-width: 1100px), print { 
 
-
+    /* Desktop Viewport: Style rule for header content */
     header {
         position: absolute;
         text-align: left;
@@ -319,10 +326,12 @@ footer a {
         margin-top: 2px;
     }
 
+    /* Desktop Viewport: Style rules for hero image*/
     .hero {
         max-width: 30em;
     }
 
+    /* Desktop Viewport: Style rules for nav content*/
     nav ul {
         text-align: right;
         padding-right: 10px;
@@ -337,5 +346,18 @@ footer a {
         background-color: #000;
     }
 
+    /* Desktop Viewport: Style rules for main content*/
+    .grid
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .img-captioned img {
+        width: 50%;
+        height: 50%;
+        margin: 10px;
+    }
 
 }
