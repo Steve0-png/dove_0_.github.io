@@ -149,6 +149,22 @@ p.steve {
     font-weight: 200;
 }
 
+.p-col ul {
+    list-style-type: disc;
+    display: block;
+    background-color: #0a1407;
+    border-style: solid;
+    border-width: 5px 20px;
+    border-color: #429673;
+    margin: 20px;
+    padding: 5px;
+    font-family: "Jetbrains Mono", monospace;
+    font-size: 1em;
+    line-height: 1.7em;
+    color: #f6eee4;
+    border-radius: 10px;
+}
+
 .hero {
     max-width: 85vw;
     margin: auto;
@@ -241,7 +257,7 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport*/
-@media screen and (min-width: 580px), print { 
+@media screen and (min-width: 620px), print { 
     
     /* Tablet and Desktop Viewport: Show tab-desk class, hide mobile class */  
     .tab-desk {
@@ -260,15 +276,6 @@ footer a {
     /* Tablet Viewport: Style rule for header content */     
     span.tab-desk {
         display: inline;
-    }
-
-    /* Tablet Viewport: Style rules for main content*/ 
-    .hero {
-        max-width: 50vw;
-    }
-
-    .img-captioned {
-        display: flex;
     }
 
     /* Tablet Viewport: Style rules for nav content*/
@@ -297,7 +304,20 @@ footer a {
         background-color: #0f010c;
     }
 
-    /* Tablet Viewport: Style rules for main content */
+    /* Tablet Viewport: Style rules for main content*/ 
+    .hero {
+        max-width: 50vw;
+    }
+
+    .img-captioned {
+        display: flex;
+    }
+    
+    .img-captioned img {
+        width: 60vw;
+        margin: 10px;
+    }
+
     .button {
         min-width: text;
     }
@@ -306,12 +326,6 @@ footer a {
         justify-items: center;
         margin: auto;
     }
-
-    .img-captioned img {
-        width: 35vw;
-        margin: 10px;
-    }
-
 
 }
 
@@ -358,6 +372,11 @@ footer a {
         width: 50%;
         height: 50%;
         margin: 10px;
+    }
+
+    .p-col img {
+        width: 90%;
+        height: 90%;
     }
 
 }
