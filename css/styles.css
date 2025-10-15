@@ -222,11 +222,6 @@ p.steve {
 }
 
 /* Style rules for listed links */
-.link-list ul {
-    list-style-type: none;
-    text-align: center;
-}
-
 .link-list {
     display: block;
     font-size: 1.2em;
@@ -234,6 +229,13 @@ p.steve {
     font-weight: bold;
     width: 13em;
     margin: auto;
+}
+
+.link-list ul {
+    border: none;
+    background: none;
+    list-style-type: none;
+    text-align: center;
 }
 
 .link-list li a {
@@ -349,10 +351,15 @@ footer a {
         margin: auto;
     }
 
+    /* Tablet Viewport: Style rules for socials content*/
+    #socials {
+        max-width: 500px;
+        margin: auto;
+    }
 }
 
 /* Media Query for Desktop Viewport*/
-@media screen and (min-width: 1023px), print { 
+@media screen and (min-width: 1030px), print { 
 
     /* Desktop Viewport: Style rule for header content */
     header {
@@ -395,6 +402,19 @@ footer a {
         grid-template-columns: auto auto;
         gap: 20px;
         justify-items: center;
+    }
+
+    #site-content {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    #site-content .img-captioned {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .img-captioned img {
