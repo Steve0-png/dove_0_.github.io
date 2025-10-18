@@ -21,6 +21,12 @@ img {
 	display: block;
 }
 
+img.thumb {
+    width: 85vw;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
 /* Style rules for mobile viewport */
 
 /* Hide tab-desk class */
@@ -30,8 +36,7 @@ img {
 
 /* Style rule for the body background */
 body {
-    /* background: radial-gradient(circle at bottom, #701835, #300625, #020727); */
-    background: url("../images/background_art.png") no-repeat;
+    background: url("../images/background_art.png") no-repeat, radial-gradient(circle at bottom, #701835, #300625, #020727);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
