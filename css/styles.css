@@ -374,6 +374,10 @@ footer a {
         margin-top: 2px;
     }
 
+    header:hover {
+        background: radial-gradient(#16454d, #000000);
+    }
+
     /* Desktop Viewport: Style rules for hero image*/
     .hero {
         max-width: 30em;
