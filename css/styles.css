@@ -258,6 +258,11 @@ p.steve {
     background-color: transparent;
 }
 
+/* Style rules for comissions content */
+#commissions-request img {
+    width: 85vw;
+}
+
 /* Style rules for footer content */
 footer {
     text-align: center;
@@ -352,8 +357,16 @@ footer a {
     }
 
     .p-col {
-        justify-items: center;
         margin: auto;
+    }
+
+    /* Tablet Viewport: Style rules for comissions content */
+    #commissions-request {
+        display: flex;
+    }
+
+    #commissions-request img {
+        width: 25vw;
     }
 
     /* Tablet Viewport: Style rules for socials content*/
@@ -364,7 +377,7 @@ footer a {
 }
 
 /* Media Query for Desktop Viewport*/
-@media screen and (min-width: 1030px), print { 
+@media screen and (min-width: 1025px), print { 
 
     /* Desktop Viewport: Style rule for header content */
     header {
@@ -406,6 +419,10 @@ footer a {
         gap: 20px;
     }
 
+    .img-captioned {
+        flex-direction: column;
+    }
+
     #catalogue {
         display: grid;
         grid-template-columns: auto auto;
@@ -427,8 +444,8 @@ footer a {
     }
 
     .img-captioned img {
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 700%;
         margin: 10px;
     }
 
@@ -448,4 +465,13 @@ footer a {
         height: 90%;
     }
 
+}
+
+/* Media Query for Large Desktop Viewport*/
+@media screen and (min-width: 1400px), print { 
+
+    /* Large Desktop Viewport: Style rules for main content*/
+    .grid {
+        grid-template-columns: auto auto auto;
+    }
 }
