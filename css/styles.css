@@ -141,6 +141,7 @@ main p a {
     text-decoration: none;
     background-color: #5de6af;
     border-radius: 50px;
+    white-space: nowrap;
 }
 
 main p a:active {
